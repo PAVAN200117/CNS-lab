@@ -32,7 +32,7 @@ key = key.lower()
 pt.replace('j','i')
 key.replace('j','i')
 pt = [a for a in pt]
-for i in range(0,len(pt),2):
+for i in range(0,len(pt)-1,2):
     if pt[i]==pt[i+1]:
         pt.insert(i+1,'x')
 while(len(pt)%2!=0):
